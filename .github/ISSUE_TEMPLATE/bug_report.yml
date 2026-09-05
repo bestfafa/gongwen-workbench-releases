@@ -1,0 +1,27 @@
+name: 问题反馈
+description: 报告启动、导入、编辑或导出问题
+title: "[问题] "
+body:
+  - type: markdown
+    attributes:
+      value: 请勿上传单位内部公文或个人信息。请用虚构内容说明问题。
+  - type: input
+    id: version
+    attributes:
+      label: 软件版本与 Windows 版本
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 操作步骤
+      description: 从打开软件开始，说明如何出现问题。
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 预期结果与实际结果
+      description: 如有报错，请先去掉真实姓名和文件路径。
+    validations:
+      required: true
